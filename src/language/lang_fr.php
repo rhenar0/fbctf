@@ -6,13 +6,13 @@ $translations = array(
     'D d/m/Y H:i:s', //used by date() function
   //Translations for IndexController
   'Facebook CTF' =>
-    'Facebook CTF',
+    'Cyber Ninja CTF 2025',
   'Conquer the world' =>
     'Conquérir le monde',
   'Play' =>
     'Jouer',
   'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Bienvenue dans la compétition Capture the Flag de Facebook. En cliquant sur « Jouer », vous serez inscrit au CTF officiel. Bonne chance dans votre conquête.',
+    'Bienvenue dans la compétition du Cyber Ninja CTF 2025. En cliquant sur « Jouer », vous serez inscrit au CTF. Bonne chance dans votre conquête.',
   'Get ready for the CTF to start and access the gameboard now!' =>
     'Préparez-vous pour le CTF. Lancez-vous et accédez au jeu maintenant !',
   'Gameboard' =>
@@ -36,7 +36,7 @@ $translations = array(
   '_seconds' =>
     '_secondes',
   'Official CTF Rules' =>
-    'Règles officielles de la capture de drapeau',
+    'Règles du CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Les actions suivantes sont interdites, sauf par indication contraire de la part des administrateurs de l\'événement',
   'Rule' =>

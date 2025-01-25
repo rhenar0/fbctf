@@ -13,7 +13,7 @@ async function tr_start(): Awaitable<void> {
       file_exists($document_root."/language/lang_".$language.".php")) {
     include ($document_root."/language/lang_".$language.".php");
   } else {
-    include ($document_root."/language/lang_en.php");
+    include ($document_root."/language/lang_fr.php");
     error_log(
       "\nWarning: Selected language ({$language}) has no translation file in the languages folder. English (languages/lang_en.php) is used instead.",
     );
