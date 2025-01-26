@@ -14,13 +14,13 @@ $translations = array(
   'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
     'Bienvenue dans la compétition du Cyber Ninja CTF 2025. En cliquant sur « Jouer », vous serez inscrit au CTF. Bonne chance dans votre conquête.',
   'Get ready for the CTF to start and access the gameboard now!' =>
-    'Préparez-vous pour le CTF. Lancez-vous et accédez au jeu maintenant !',
+    'Tenez-vous prêt pour le CTF. Il ne reste plus que quelques jours avant le lancement...',
   'Gameboard' =>
     'Jeu',
   'Register Team' =>
     'Enregistrer une équipe',
   'Get ready for the CTF to start and register your team now!' =>
-    'Préparez-vous pour le CTF, démarrer et enregistrez une équipe maintenant!',
+    'Préparez-vous pour le CTF et enregistrez une équipe maintenant!',
   'Login' =>
     'Se connecter',
   'Soon' =>

@@ -47,9 +47,9 @@ class IndexController extends Controller {
         );
     } else {
       $welcome_msg =
-        'Welcome to the '.
+        'Bienvenue dans la compétition du '.
         $custom_org->getValue().
-        ' Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.';
+        '. En cliquant sur « Jouer », vous serez inscrit au CTF. Bonne chance dans votre conquête spatial !';
     }
     return
       <div class="fb-row-container full-height fb-scroll">
