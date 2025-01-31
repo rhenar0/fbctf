@@ -381,8 +381,8 @@ class IndexController extends Controller {
 
     $page_header =
       <header class="fb-section-header fb-container">
-        <h1 class="fb-glitch" data-text="Team Registration">
-          {tr('Team Registration')}
+        <h1 class="fb-glitch" data-text="Inscription d\'une équipe">
+          {tr('Inscription d\'une équipe')}
         </h1>
       </header>;
 
@@ -439,7 +439,7 @@ class IndexController extends Controller {
       <header class="fb-section-header fb-container">
         <p class="inner-container">
           {tr(
-            'Or register to use username and password here. Once you have registered, you will be logged in.',
+            'Voilà où vous pouvez enregistrez votre équipe ! Un mot de passe, le même nom pour votre équipe que votre pseudo Discord et un Token reçu par mail !',
           )}
         </p>
       </header>;
@@ -504,11 +504,6 @@ class IndexController extends Controller {
           </fieldset>
           <div class="fb-choose-emblem">
             <h6>{tr('Choose an Emblem')}</h6>
-            <h6>
-              <a href="#" id="custom-emblem-link">
-                {tr('or upload your own')}
-              </a>
-            </h6>
             <div class="custom-emblem">
               <input
                 autocomplete="off"
@@ -627,8 +622,8 @@ class IndexController extends Controller {
 
     $page_header =
       <header class="fb-section-header fb-container">
-        <h1 class="fb-glitch" data-text="Team Registration">
-          {tr('Team Registration')}
+        <h1 class="fb-glitch" data-text="Inscription d\'une équipe">
+          {tr('Inscription d\'une équipe')}
         </h1>
       </header>;
 
@@ -685,7 +680,7 @@ class IndexController extends Controller {
       <header class="fb-section-header fb-container">
         <p class="inner-container">
           {tr(
-            'Or register to use username and password here. Once you have registered, you will be logged in.',
+            'Voilà où vous pouvez enregistrez votre équipe ! Un mot de passe, le même nom pour votre équipe que votre pseudo Discord et un Token reçu par mail !',
           )}
         </p>
       </header>;
@@ -746,11 +741,6 @@ class IndexController extends Controller {
           </fieldset>
           <div class="fb-choose-emblem">
             <h6>{tr('Choose an Emblem')}</h6>
-            <h6>
-              <a href="#" id="custom-emblem-link">
-                {tr('or upload your own')}
-              </a>
-            </h6>
             <div class="custom-emblem">
               <input
                 autocomplete="off"
@@ -877,8 +867,8 @@ class IndexController extends Controller {
           role="main"
           class="fb-main page--registration full-height fb-scroll">
           <header class="fb-section-header fb-container">
-            <h1 class="fb-glitch" data-text={tr('Team Registration')}>
-              {tr('Team Registration')}
+            <h1 class="fb-glitch" data-text={tr('Inscription d\'une équipe')}>
+              {tr('Inscription d\'une équipe')}
             </h1>
             <p class="inner-container">
               {tr(
@@ -899,7 +889,7 @@ class IndexController extends Controller {
             class=
               "fb-main page--game-status row-fluid no-shrink center-vertically fb-img-glitch">
             <div class="fb-container fb-centered-main">
-              <h3 class="title-lead">{tr('Team Registration')}</h3>
+              <h3 class="title-lead">{tr('Inscription d\'une équipe')}</h3>
               <h1 class="fb-glitch" data-text={tr('Not Available')}>
                 {tr('Not Available')}
               </h1>

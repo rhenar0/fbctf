@@ -132,6 +132,11 @@ class GameboardController extends Controller {
             class="module--outer-right"
             data-module="game-clock">
           </aside>
+          <aside
+            data-name={tr('Oteria Cyber School >> https://oteria.fr/')}
+            class="module--outer-left"
+            data-module="announcements">
+          </aside>
         </div>
       </div>;
   }
