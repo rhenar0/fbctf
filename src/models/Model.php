@@ -25,15 +25,22 @@ abstract class Model {
    */
   protected static function getMc(): Memcached {
     if (self::$mc === MUST_MODIFY) {
-      $config = parse_ini_file('../../settings.ini');
-      $cluster = must_have_idx($config, 'MC_HOST');
-      $port = must_have_idx($config, 'MC_PORT');
-      $host = $cluster[array_rand($cluster)];
-      self::$mc = new Memcached();
-      self::$mc->addServer($host, $port);
+        $config = parse_ini_file('../../settings.ini', true);
+        $cluster = must_have_idx($config, 'MC_HOST');
+        $port = must_have_idx($config, 'MC_PORT');
+
+        // Vérification du type et conversion en tableau si nécessaire
+        if (!is_array($cluster)) {
+            $cluster = [$cluster]; 
+        }
+
+        $host = $cluster[array_rand($cluster)]; // Maintenant, on est sûr que $cluster est un tableau
+
+        self::$mc = new Memcached();
+        self::$mc->addServer($host, $port);
     }
     return self::$mc;
-  }
+}
 
   public static function getMemcachedStats(): mixed {
     $stats = array();
@@ -51,16 +58,22 @@ abstract class Model {
    */
   protected static function getMcWrite(): Memcached {
     if (self::$mc_write === MUST_MODIFY) {
-      $config = parse_ini_file('../../settings.ini');
-      $cluster = must_have_idx($config, 'MC_HOST');
-      $port = must_have_idx($config, 'MC_PORT');
-      self::$mc_write = new Memcached();
-      foreach ($cluster as $node) {
-        self::$mc_write->addServer($node, $port);
-      }
+        $config = parse_ini_file('../../settings.ini', true);
+        $cluster = must_have_idx($config, 'MC_HOST');
+        $port = must_have_idx($config, 'MC_PORT');
+
+        // Vérification du type et conversion en tableau si nécessaire
+        if (!is_array($cluster)) {
+            $cluster = [$cluster]; 
+        }
+
+        self::$mc_write = new Memcached();
+        foreach ($cluster as $node) {
+            self::$mc_write->addServer($node, $port);
+        }
     }
     return self::$mc_write;
-  }
+}
 
   protected static function setMCRecords(string $key, mixed $records): void {
     self::getCacheClassObject();
